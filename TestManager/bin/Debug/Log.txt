@@ -1,0 +1,5 @@
+
+----------------------------------------------------------------------------
+Index was outside the bounds of the array.
+ StackTrace   at SeleniumFramework.GlobalVars.Test.InitializeTestVars(DataTable envVars) in D:\NTierFW\Framework\HelperClasses\GlobalVars.cs:line 393
+   at RegressionSuite.SmokeTests.MainSequentialMethod() in D:\NTierFW\RegressionSuite\SmokeTests.cs:line 2959

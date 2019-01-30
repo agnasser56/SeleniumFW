@@ -1,0 +1,3 @@
+D:\SeleniumFW\Efada\TestManager\bin\Debug\TestManager.exe.config
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestManager.exe
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestManager.pdb

@@ -1,0 +1,112 @@
+<form id="mainForm" name="mainForm" method="post" action="/CarPortalWeb/faces/jsp/listOfIstematahTransferOwnership.jsp" enctype="application/x-www-form-urlencoded" onkeypress="if (event.keyCode == 13) return true;">
+<input type="hidden" name="mainForm" value="mainForm">
+
+							<table class="form">
+								<tbody>
+									<tr>
+										<td colspan="3" class="header">&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="label">By</td>
+										<td><select id="mainForm:filterType" name="mainForm:filterType" size="1" onchange="changeSelect(this.value, true);">	<option value="1" selected="selected">by date</option>
+	<option value="2">By Plate</option>
+</select></td>
+									</tr>
+
+									<tr id="filterByDate_s_TR">
+										<td class="label">Start Date</td>
+										<td><input id="mainForm:startDate" type="text" name="mainForm:startDate"> &nbsp;&nbsp; <img src="../images/calendar.png" border="0" onclick="displayCalendar(getJSFElementById('startDate'),'dd/mm/yyyy',this)"> &nbsp;&nbsp; </td>
+									</tr>
+									<tr id="filterByDate_e_TR">
+										<td class="label">End Date</td>
+										<td><input id="mainForm:endDate" type="text" name="mainForm:endDate"> &nbsp;&nbsp; <img src="../images/calendar.png" border="0" onclick="displayCalendar(getJSFElementById('endDate'),'dd/mm/yyyy',this)"> &nbsp;&nbsp; </td>
+									</tr>
+
+
+									<tr id="plateType_TR" style="display: none;">
+										<td class="label">Plate Type</td>
+										<td><select id="mainForm:plateType" name="mainForm:plateType" size="1" onchange="javascript: setMotorcycle(this.value);">	<option value="1">Private Car</option>
+	<option value="2">Public Transport</option>
+	<option value="3">Private Transport</option>
+	<option value="4">Public Bus</option>
+	<option value="5">Private Bus</option>
+	<option value="6">Taxi</option>
+	<option value="7">Equipment</option>
+	<option value="8">Export</option>
+	<option value="9">Diplomatic</option>
+	<option value="10">Motorcycle</option>
+	<option value="11">Temp</option>
+</select></td>
+									</tr>
+									<tr id="plateNumber_TR" style="display: none;">
+										<td class="label">Plate Number</td>
+										<td dir="rtl"><img border="0" src="../images/keyboard.png" onclick="javascript: showKeyBoard();" width="28" height="13">&nbsp; <input id="mainForm:latters1" type="text" name="mainForm:latters1" maxlength="1" onkeypress="return disabledType(event);" size="1" disabled="" readonly="">
+											&nbsp; <input id="mainForm:latters2" type="text" name="mainForm:latters2" maxlength="1" onkeypress="return disabledType(event);" size="1" disabled="" readonly="">
+											&nbsp; <input id="mainForm:latters3" type="text" name="mainForm:latters3" maxlength="1" onkeypress="return disabledType(event);" size="1" disabled="" readonly="">&nbsp;&nbsp;&nbsp; <input id="mainForm:numbers" type="text" name="mainForm:numbers" value="" maxlength="4" onkeypress="return disabledType(event);" size="3" disabled="" readonly=""> &nbsp;</td>
+									</tr>
+									<tr id="keyBoard_TR" style="display: none;">
+										<td colspan="2" id="center">
+
+<br>
+	<table id="keyBoard" dir="rtl" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td>
+				<select style="float: right;" size="1" name="languageLatter" onchange="javascript: changeLanguageKeyBoardLatters(this.value);">
+					
+						
+						
+							<option value="ar">Arabic Letters</option>
+							<option value="en">English Letters</option>
+							<option value="arANDen">Arabic/English Letters</option>
+						
+					
+				</select>
+			</td>
+			<td style="padding: 0px; direction: ltr;">
+				<img border="0" src="../images/close.gif" style="float: left" onclick="javascript: showKeyBoard();">&nbsp;
+			</td>
+			
+			
+		</tr>
+
+		<tr>
+		
+			<td>
+				<div id="lattersKeyBoard"><input class="buttonKeyBoard" type="button" value="أ" onclick="javascript: actionButton('أ', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ب" onclick="javascript: actionButton('ب', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ح" onclick="javascript: actionButton('ح', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="د" onclick="javascript: actionButton('د', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ر" onclick="javascript: actionButton('ر', 'latters', 3);"><br><input class="buttonKeyBoard" type="button" value="س" onclick="javascript: actionButton('س', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ص" onclick="javascript: actionButton('ص', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ط" onclick="javascript: actionButton('ط', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ع" onclick="javascript: actionButton('ع', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ق" onclick="javascript: actionButton('ق', 'latters', 3);"><br><input class="buttonKeyBoard" type="button" value="ك" onclick="javascript: actionButton('ك', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ل" onclick="javascript: actionButton('ل', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="م" onclick="javascript: actionButton('م', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ن" onclick="javascript: actionButton('ن', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ه" onclick="javascript: actionButton('ه', 'latters', 3);"><br><input class="buttonKeyBoard" type="button" value="و" onclick="javascript: actionButton('و', 'latters', 3);"><input class="buttonKeyBoard" type="button" value="ي" onclick="javascript: actionButton('ي', 'latters', 3);"></div>
+				<script>getKeyBoardLatters('lattersKeyBoard','latters');</script>
+			</td>
+			<td>
+				<div id="numbersKeyBoard"><input class="buttonKeyBoard" type="button" value="0" onclick="javascript: actionButton('0', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="1" onclick="javascript: actionButton('1', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="2" onclick="javascript: actionButton('2', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="3" onclick="javascript: actionButton('3', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="4" onclick="javascript: actionButton('4', 'numbers', 1);"><br><input class="buttonKeyBoard" type="button" value="5" onclick="javascript: actionButton('5', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="6" onclick="javascript: actionButton('6', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="7" onclick="javascript: actionButton('7', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="8" onclick="javascript: actionButton('8', 'numbers', 1);"><input class="buttonKeyBoard" type="button" value="9" onclick="javascript: actionButton('9', 'numbers', 1);"><br></div>
+				<script>getKeyBoartNumbers('numbersKeyBoard','numbers');</script>
+				
+			</td>
+			
+			
+		</tr>
+		<tr>
+			
+				
+				
+					<td id="center"><input type="button" value="Clear Letters" id="clearLatters" onclick="javascript: clearField('latters', 3)"></td>
+					<td id="center"><input type="button" value="Clear Numbers" id="clearNumbers" onclick="javascript: clearField('numbers', 1)"></td>
+				
+			
+		</tr>
+	</tbody></table>
+<br></td>
+									</tr>
+
+
+									<tr>
+										<td colspan="2" id="center"><input id="mainForm:list" type="submit" name="mainForm:list" value="View" class="mainBtn"></td>
+									</tr>
+
+
+									<tr>
+										<td colspan="2" class="footer">&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+
+						<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="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">
+</form>

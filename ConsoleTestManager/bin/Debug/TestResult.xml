@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="#Param#" testcasecount="#Param#" result="#Param#" total="#Param#" passed="#Param#" failed="#Param#" inconclusive="#Param#" skipped="#Param#" asserts="#Param#" engine-version="3.2.0.0" clr-version="4.0.30319.42000" start-time="#Param#" end-time="#Param#" duration="#Param#">
+  <command-line><![CDATA[nunit3-console.exe  TestSuite/BATDemoTests.dll]]></command-line>
+  <test-suite type="Assembly" id="#Param#" name="#Param#" fullname="#Param#" runstate="Runnable" testcasecount="#Param#" result="#Param#" duration="#Param#" total="#Param#" passed="#Param#" failed="#Param#" inconclusive="#Param#" skipped="#Param#" asserts="#Param#" site="Child">
+    <properties>
+      <property name="_PID" value="16896" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <test-suite type="Namespace" id="" name="#Param#" fullname="#Param#" runstate="#Param#" testcasecount="#Param#" result="#Param#" duration="#Param#" total="#Param#" passed="#Param#" failed="#Param#" inconclusive="#Param#" skipped="#Param#" asserts="#Param#" site="Child">
+      <test-suite type="TestFixture" id="151515" name="#Param#" fullname="#Param#" runstate="#Param#" testcasecount="#Param#" result="#Param#" duration="#Param#" total="#Param#" passed="#Param#" failed="#Param#" inconclusive="#Param#" skipped="#Param#" asserts="#Param#">
+        <test-case id="121505" name="ViewHospital" fullname="ViewHospital" runstate="Runnable" result="Passed" label="Valid" duration="00:00:36.8459323" assert="0" />
+        <test-case id="121505" name="ViewHospital" fullname="ViewHospital" runstate="Runnable" result="Passed" label="Valid" duration="00:00:36.8552854" assert="0" />
+        <test-case id="121505" name="ListQCAccounts" fullname="ListQCAccounts" runstate="Runnable" result="Passed" label="Valid" duration="00:00:03.5509203" assert="0" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

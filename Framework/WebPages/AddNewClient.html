@@ -1,0 +1,342 @@
+<a href="https://192.168.41.22/EMC.UI/Clients/ClientList.aspx"/>
+<a id="lnkBtn" class="button blue fa fa-plus" href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$lnkBtn", "", true, "", "", false, true))'>Add New Client</a>
+<table class="searchTable">
+
+
+           <tbody><tr>
+            <td colspan="4">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfCSRF" id="hfCSRF" value="c81aca60-d5f3-48c2-942a-698c8ec7c5f8">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hfIsValid" id="hfIsValid" value="valid">
+                 <input type="hidden" name="ctl00$ContentPlaceHolder1$hfIsViewMode" id="hfIsViewMode" value="edit">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label"> 
+            <span id="lblClientArName">Arabic Name:</span>
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtClientArName" type="text" maxlength="250" id="txtClientArName" class="textboxWide requiredValue arabicValue">
+                 <div class="error hide"><span id="Label9">Please enter required information.</span></div>
+                 <div class="formaterror hide"><span id="Label65">Please enter a valid format.</span></div>
+
+         
+
+                     
+            </td>
+
+             <td class="label" style="white-space:nowrap">
+                <span id="lblClientShArName">Short Arabic Name:</span>
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtClientShArName" type="text" maxlength="100" id="txtClientShArName" class="textboxWide requiredValue arabicValue">
+                 <div class="error hide"><span id="Label10">Please enter required information.</span></div>
+                  <div class="formaterror hide"><span id="Label48">Please enter a valid format.</span></div>
+
+            </td>
+
+  
+
+        </tr>
+        <tr>
+              <td class="label" style="white-space:nowrap">
+                <span id="lblClientEnName">English Name:</span>
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtClientEnName" type="text" maxlength="250" id="txtClientEnName" class="textboxWide requiredValue englishValue">
+                 <div class="error hide"><span id="Label11">Please enter required information.</span></div>
+                 <div class="formaterror hide"><span id="Label46">Please enter a valid format.</span></div>
+
+            </td>
+
+             <td class="label" style="white-space:nowrap">
+                <span id="lblClientEnShName">English Short Name:</span>
+            </td>
+            <td align="Left">
+                <input name="ctl00$ContentPlaceHolder1$txtClientEnShName" type="text" maxlength="100" id="txtClientEnShName" class="textboxWide requiredValue englishValue">
+                 <div class="error hide"><span id="Label12">Please enter required information.</span></div>
+                  <div class="formaterror hide"><span id="Label53">Please enter a valid format.</span></div>
+
+            </td>
+
+
+        
+        </tr>
+
+                <tr>
+        
+                    <td class="label">
+                <span id="Label2">Sector:</span>
+            </td>
+            <td>
+                <select name="ctl00$ContentPlaceHolder1$dropSectorType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$dropSectorType\',\'\')', 0)" id="dropSectorType" class="selectWide requiredValue">
+	<option selected="selected" value="1">Government</option>
+	<option value="2">Private</option>
+
+</select>
+                 <div class="error hide"><span id="Label14">Please enter required information.</span></div>
+
+            </td>
+        </tr>
+
+        <tr>
+
+          <td class="label">
+                <span id="lblClientMOINum">MOI Number:</span>
+          
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtClientMOINum" type="text" maxlength="10" id="txtClientMOINum" class="textboxWide numberValue">
+                  <div class="error hide"><span id="Label56">Please enter required information.</span></div>
+                  <div class="formaterror hide"><span id="Label57">Please enter a valid format.</span></div>
+
+
+            </td>
+
+        <td class="label">
+                
+            </td>
+            <td>
+                
+                  <div class="error hide"><span id="Label58">Please enter required information.</span></div>
+                  <div class="formaterror hide"><span id="Label63">Please enter a valid format.</span></div>
+            </td>
+
+          
+           
+        </tr>
+        <tr>
+           <td class="label">
+                <span id="lblClientCCNum">CR Number:</span>
+               
+            </td>
+            <td>
+                <input name="ctl00$ContentPlaceHolder1$txtClientCCNum" type="text" maxlength="50" id="txtClientCCNum" class="textboxWide numberValue">
+                  <div class="error hide"><span id="Label64">Please enter required information.</span></div>
+                  <div class="formaterror hide"><span id="Label66">Please enter a valid format.</span></div>
+          
+                <span id="lblHintCommercialrecord" style="color:#999999;font-size:Smaller;">Commercial Record</span>
+            </td>
+
+
+
+
+        </tr>
+        <tr>
+             
+                       <td class="label" style="white-space:nowrap">
+                <span id="lblGerissue">CR Gregorian Issue Date:</span>
+          
+            </td>
+            <td>
+   
+               
+                  
+    <link href="../Styles/jquery.calendars.picker.css" rel="stylesheet" type="text/css">
+ 
+    <script src="../Scripts/jquery.calendars.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.picker.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.plus.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.ummalqura.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.ummalqura-ar.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars-ar-EG.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(function () {
+        var Culture = 'EN';
+        var DateType = '0';
+        var CalendarType;
+        var CultureText;
+
+
+        if (DateType == '1') {
+            CalendarType = 'ummalqura';
+
+            if (Culture == 'EN')
+                CultureText = 'en';
+            else
+                CultureText = 'ar';
+
+            $('.cssHijriCalendar').calendarsPicker({ calendar: $.calendars.instance(CalendarType, CultureText) });
+        }
+
+        else if (DateType == '0') {
+            CalendarType = 'gregorian';
+            if (Culture == 'AR')
+                CultureText = 'ar-EG';
+            else
+                CultureText = 'en';
+
+            $('.cssCalendar').calendarsPicker({ calendar: $.calendars.instance(CalendarType, CultureText) });
+
+        }
+
+
+       
+    });
+
+    </script>
+<input name="ctl00$ContentPlaceHolder1$gmdClientCGrg$txtDate" type="text" maxlength="10" id="ctl00_ContentPlaceHolder1_gmdClientCGrg_txtDate" class="cssCalendar TodayIsMax hasCalendarsPicker">
+
+
+
+
+
+
+                  <div class="error hide"><span id="Label92">Please enter required information.</span></div>
+                  <div class="error hide"><span id="Label91">Maximum Date is up to today date.</span></div>
+                
+            </td>
+
+             <td class="label" style="white-space:nowrap">
+                <span id="lblHijIssue">CR Hijri Issue Date:</span>
+              
+            </td>
+            <td>
+               
+                
+    <link href="../Styles/jquery.calendars.picker.css" rel="stylesheet" type="text/css">
+ 
+    <script src="../Scripts/jquery.calendars.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.picker.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.plus.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.ummalqura.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars.ummalqura-ar.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.calendars-ar-EG.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(function () {
+        var Culture = 'EN';
+        var DateType = '1';
+        var CalendarType;
+        var CultureText;
+
+
+        if (DateType == '1') {
+            CalendarType = 'ummalqura';
+
+            if (Culture == 'EN')
+                CultureText = 'en';
+            else
+                CultureText = 'ar';
+
+            $('.cssHijriCalendar').calendarsPicker({ calendar: $.calendars.instance(CalendarType, CultureText) });
+        }
+
+        else if (DateType == '0') {
+            CalendarType = 'gregorian';
+            if (Culture == 'AR')
+                CultureText = 'ar-EG';
+            else
+                CultureText = 'en';
+
+            $('.cssCalendar').calendarsPicker({ calendar: $.calendars.instance(CalendarType, CultureText) });
+
+        }
+
+
+       
+    });
+
+    </script>
+<input name="ctl00$ContentPlaceHolder1$gmdClientCCHijri$txtDate" type="text" maxlength="10" id="ctl00_ContentPlaceHolder1_gmdClientCCHijri_txtDate" class="cssHijriCalendar TodayIsMax hasCalendarsPicker">
+
+
+
+
+
+
+                 <div class="error hide"><span id="Label93">Maximum Date is up to today date.</span></div>
+              
+                
+            </td>
+
+
+ 
+        </tr>
+
+        <tr>
+                   <td class="label">
+                <span id="lblRegion">Region:</span>
+            </td>
+            <td>
+                <select name="ctl00$ContentPlaceHolder1$dropRegion" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$dropRegion\',\'\')', 0)" id="dropRegion" class="selectWide requiredValue">
+	<option selected="selected" value="2000">Riyadh District</option>
+	<option value="2001">Qassim District</option>
+	<option value="2002">Mecca District</option>
+	<option value="2003">Al Madinah District</option>
+	<option value="2004">Hail District</option>
+	<option value="2005">Al-Jouf District</option>
+	<option value="2006">Tabuk District</option>
+	<option value="2007">The northern border District</option>
+	<option value="2008">Asir District</option>
+	<option value="2009">Jazan District</option>
+	<option value="2010">Najran District</option>
+	<option value="2011">Baha District</option>
+	<option value="2012">Eastern District</option>
+
+</select>
+                 <div class="error hide"><span id="Label6">Please enter required information.</span></div>
+                
+            </td>
+
+            <td class="label">
+                <span id="lblCity">City:</span>
+            </td>
+            <td>
+                <select name="ctl00$ContentPlaceHolder1$dropCity" id="dropCity" class="selectWide requiredValue">
+	<option value="1">Riyadh</option>
+	<option value="2">Aldariya</option>
+	<option value="3">Aldawadmi</option>
+	<option value="4">Aldariya</option>
+	<option value="5">Aldawadmi</option>
+	<option value="6">Al Quwaiei</option>
+	<option value="7">Wadi Il Dawasir</option>
+	<option value="8">Almajmaa</option>
+	<option value="9">Alkharj</option>
+	<option value="10">Aliflaj</option>
+	<option value="11">Shaqraa</option>
+	<option value="12">Jotat Bani Tamim</option>
+	<option value="13">Alzelfi</option>
+	<option value="14">Rmah</option>
+	<option value="15">Afif</option>
+	<option value="16">Harimlaa</option>
+	<option value="17">Nadec</option>
+	<option value="18">Almozahmieh</option>
+	<option value="19">Alsalil</option>
+	<option value="20">Darmaa</option>
+	<option value="21">Alghat</option>
+	<option value="22">Alhariq</option>
+	<option value="23">Aldlem</option>
+	<option value="24">Mraat</option>
+
+</select>
+                 <div class="error hide"><span id="Label13">Please enter required information.</span></div>
+                
+            </td>
+        
+        </tr>
+
+        
+
+
+        
+
+        <tr>
+        <td colspan="4">
+        <span class="buttonsArea">
+                       
+                
+                <a class="button blue next fa fa-chevron-left" href="javascript:void(0)"><span id="Label32">Next</span></a> 
+
+
+     
+                  </span>
+                  
+                  </td>
+        </tr>
+
+
+           </tbody></table>
+		   
+		   

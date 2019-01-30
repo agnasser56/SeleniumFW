@@ -1,0 +1,31 @@
+D:\SeleniumFW\Efada\TestManager\bin\Debug\TestManager.exe.config
+D:\SeleniumFW\Efada\TestManager\bin\Debug\TestManager.exe
+D:\SeleniumFW\Efada\TestManager\bin\Debug\TestManager.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\RegressionSuite.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\SeleniumFramework.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\ThoughtWorks.Selenium.Core.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\WebDriver.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\WebDriver.Support.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\Faker.NET4.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\ReportUnit.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\RazorEngine.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\System.Web.Razor.dll
+D:\SeleniumFW\Efada\TestManager\bin\Debug\SeleniumFramework.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\RegressionSuite.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\ThoughtWorks.Selenium.Core.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\ThoughtWorks.Selenium.Core.xml
+D:\SeleniumFW\Efada\TestManager\bin\Debug\WebDriver.xml
+D:\SeleniumFW\Efada\TestManager\bin\Debug\WebDriver.Support.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\WebDriver.Support.xml
+D:\SeleniumFW\Efada\TestManager\bin\Debug\Faker.NET4.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\ReportUnit.pdb
+D:\SeleniumFW\Efada\TestManager\bin\Debug\RazorEngine.xml
+D:\SeleniumFW\Efada\TestManager\bin\Debug\System.Web.Razor.xml
+D:\SeleniumFW\Efada\TestManager\bin\Debug\de-DE\Faker.NET4.resources.dll
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestExecutionLayer(GUI Runner).csprojResolveAssemblyReference.cache
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestManager.Form1.resources
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestManager.Properties.Resources.resources
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestExecutionLayer(GUI Runner).csproj.GenerateResource.Cache
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestManager.exe
+D:\SeleniumFW\Efada\TestManager\obj\Debug\TestManager.pdb

@@ -1,0 +1,3 @@
+
+[22-06-2017][14:40:30] [ERROR] ---- 
+Generate Report || The given key was not present in the dictionary.

@@ -1,0 +1,17 @@
+D:\SVN\Efada\Framework\bin\Debug\chromedriver.exe
+D:\SVN\Efada\Framework\bin\Debug\SeleniumFramework.dll.config
+D:\SVN\Efada\Framework\bin\Debug\SeleniumFramework.dll
+D:\SVN\Efada\Framework\bin\Debug\SeleniumFramework.pdb
+D:\SVN\Efada\Framework\bin\Debug\Faker.NET4.dll
+D:\SVN\Efada\Framework\bin\Debug\nunit.framework.dll
+D:\SVN\Efada\Framework\bin\Debug\WebDriver.dll
+D:\SVN\Efada\Framework\bin\Debug\WebDriver.Support.dll
+D:\SVN\Efada\Framework\bin\Debug\Faker.NET4.pdb
+D:\SVN\Efada\Framework\bin\Debug\nunit.framework.xml
+D:\SVN\Efada\Framework\bin\Debug\WebDriver.xml
+D:\SVN\Efada\Framework\bin\Debug\WebDriver.Support.xml
+D:\SVN\Efada\Framework\bin\Debug\de-DE\Faker.NET4.resources.dll
+D:\SVN\Efada\Framework\obj\Debug\SeleniumFramework.csprojResolveAssemblyReference.cache
+D:\SVN\Efada\Framework\obj\Debug\SeleniumFramework.dll
+D:\SVN\Efada\Framework\obj\Debug\SeleniumFramework.pdb
+D:\SVN\Efada\Framework\obj\Debug\SeleniumFramework.csproj.ResolveComReference.cache

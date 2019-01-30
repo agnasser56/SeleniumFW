@@ -1,0 +1,9 @@
+
+----------------------------------------------------------------------------
+
+ViewHospital
+CommandName: txtHospitalName CommandData: Robot CommandResult:True ErrorDetails: 
+CommandName: drpStatus CommandData: Active CommandResult:True ErrorDetails: 
+CommandName: btnShow CommandData: click CommandResult:True ErrorDetails: 
+CommandName: xpath CommandData: //*[text()='Robot'] CommandResult:True ErrorDetails: 
+CommandName: txtHospitalArbName CommandData: بورونط CommandResult:False ErrorDetails: Hospital Arabic Name-->Text value does not match with application Text value.

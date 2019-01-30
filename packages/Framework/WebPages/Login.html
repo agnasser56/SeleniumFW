@@ -1,0 +1,49 @@
+<div id="Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
+	
+
+    
+       
+        <table class="searchTable loginTable">
+        <tbody><tr>
+            <td class="label" colspan="2"><span id="lblLoginError" style="color:#CC0000;"></span></td>
+           
+          </tr>
+          <tr>
+            <td class="label"><span id="lblUserName" style="direction: ltr">User Name</span></td>
+            <td><input name="Login1$txtUserName" type="text" id="txtUserName" autocomplete="off" class="textboxWide">
+            <span class="error"></span>
+            <span class="error"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="label"><span id="lblPassword" style="direction: ltr;">Password</span></td>
+            <td><input name="Login1$txtPassword" type="password" id="txtPassword" class="textboxWide" autocomplete="off">
+                <span class="error"></span>
+                <span class="error"></span>
+          </td>
+          </tr>
+            
+            
+
+          <tr>
+            <td colspan="2">
+
+            <span class="buttonsArea"> 
+			                 <ul class="register">
+                <li><a id="lnkForgotPassword" href="javascript:__doPostBack('Login1$lnkForgotPassword','')">Forgot your password</a></li>
+                <li>
+                  
+               
+                </li>
+
+              </ul>
+                <a id="btnLogin" class="button orange fa fa-sign-in" href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("Login1$btnLogin", "", true, "LoginValidation", "", false, true))'>Log In</a>
+			</span>
+
+            </td>
+
+          </tr>
+
+        </tbody></table>
+        
+</div>

@@ -1,0 +1,39 @@
+
+[02-04-2017][14:30:18] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:30:46] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:32:03] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:32:19] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:32:33] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:32:59] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:33:11] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:33:25] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:33:39] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:33:52] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:34:06] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:34:19] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][14:34:43] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.

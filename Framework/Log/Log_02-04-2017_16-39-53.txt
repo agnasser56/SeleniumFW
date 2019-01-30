@@ -1,0 +1,18 @@
+
+[02-04-2017][16:44:59] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][16:45:47] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][16:46:57] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][16:47:02] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][16:47:08] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.
+
+[02-04-2017][16:47:13] [ERROR] ---- 
+Incorrect syntax near ','. || Incorrect syntax near ','.

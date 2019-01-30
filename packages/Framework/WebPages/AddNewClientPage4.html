@@ -1,0 +1,153 @@
+<tbody><tr>
+            <td class="subTitle titlePadding" colspan="4">
+                <span id="lblCertificatesDataDeliveryInfo">Certificates Results Delivery:</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                <span id="lblCertificatesResultsDeliveryChannelStatus">Delivery Channel Status:</span>
+            </td>
+            <td>
+                <table id="rbtnlCertificatesDeliveryStatus" class="chooseLabel oneLine" border="0">
+	<tbody><tr>
+		<td><input id="rbtnlCertificatesDeliveryStatus_0" type="radio" name="ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryStatus" value="1" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryStatus$rbtnlCertificatesDeliveryStatus_0\',\'\')', 0)"><label for="rbtnlCertificatesDeliveryStatus_0">Inactive: Delivery is not required</label></td>
+	</tr><tr>
+		<td><input id="rbtnlCertificatesDeliveryStatus_1" type="radio" name="ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryStatus" value="2" checked="checked"><label for="rbtnlCertificatesDeliveryStatus_1">Active: Delivery is required</label></td>
+	</tr>
+</tbody></table>
+                   <div class="error hide"><span id="Label3">Please enter required information.</span></div>
+            </td>
+            <td></td>
+             <td></td>
+        </tr>
+
+        <tr>
+            <td id="tdLblDeliveryType" class="label">
+                <span id="lblCertificatesResultsDeliveryType">Delivery Channel Type:</span>
+            </td>
+
+            <td id="tdDeliveryType" class="label">
+                <table id="rbtnlCertificatesDeliveryType" class="chooseLabel oneLine" border="0">
+	<tbody><tr>
+		<td><input id="rbtnlCertificatesDeliveryType_0" type="radio" name="ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryType" value="1" checked="checked"><label for="rbtnlCertificatesDeliveryType_0">Summarized Certificate Result</label></td>
+	</tr><tr>
+		<td><input id="rbtnlCertificatesDeliveryType_1" type="radio" name="ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryType" value="2"><label for="rbtnlCertificatesDeliveryType_1">Detailed Certificate Result</label></td>
+	</tr>
+</tbody></table>
+            </td>
+
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr id="trDeliveryMode">
+	<td id="tdLblDeliveryMode" class="label">
+                <span id="lblCertificatesResultsDeliveryChannelMode">Data Delivery Mode:</span>
+            </td>
+	<td id="tdDeliveryMode">
+                <table id="rbtnlCertificatesDeliveryMode" class="chooseLabel oneLine" border="0">
+		<tbody><tr>
+			<td><input id="rbtnlCertificatesDeliveryMode_0" type="radio" name="ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryMode" value="1" checked="checked"><label for="rbtnlCertificatesDeliveryMode_0">PUSH: EMC will instantenously send the result once it is approved to the related client</label></td>
+		</tr><tr>
+			<td><input id="rbtnlCertificatesDeliveryMode_1" type="radio" name="ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryMode" value="2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$rbtnlCertificatesDeliveryMode$rbtnlCertificatesDeliveryMode_1\',\'\')', 0)"><label for="rbtnlCertificatesDeliveryMode_1">PULL: The related client will request a specific result once it is approved to the related client</label></td>
+		</tr>
+	</tbody></table>
+            </td>
+	<td></td>
+	<td></td>
+</tr>
+
+
+        
+        
+        
+        <tr id="trWebServiceAddress">
+	<td class="label">
+                <span id="lblWebServiceAddress">Web Service URL:</span>
+               
+            </td>
+	<td>
+                <input name="ctl00$ContentPlaceHolder1$txtWebServiceUrl" type="text" maxlength="200" id="txtWebServiceUrl" class="textboxWide requiredValue url needed">
+                 <div class="error hide" style="display: none;"><span id="Label87">Please enter required information.</span></div>
+                  <div class="error hide" style="display: none;"><span id="Label96">Invalid Web Service Format.</span></div>
+
+                 <span id="lblWebServiceAddressHint" style="color:#999999;font-size:Smaller;">ex: http://www.elm.com/ws/channel.asmx</span>
+    
+          
+            </td>
+	<td></td>
+	<td></td>
+</tr>
+
+        <tr id="trWebServiceDomain">
+	<td class="label">
+                <span id="lblWebServiceDomain">Web Service Domain:</span>
+              <span id="Label110" style="color:#999999;">(Optional)</span>
+            </td>
+	<td>
+                <input name="ctl00$ContentPlaceHolder1$txtWebServiceDomain" type="text" maxlength="40" id="txtWebServiceDomain" class="textboxWide">
+            </td>
+	<td></td>
+	<td></td>
+</tr>
+
+        <tr id="trWebServiceUserName">
+	<td class="label">
+                <span id="lblWebServiceUserName">Web Service User Name:</span>
+            </td>
+	<td>
+                <input name="ctl00$ContentPlaceHolder1$txtWebServiceUserName" type="text" maxlength="55" id="txtWebServiceUserName" class="textboxWide requiredValue needed">
+                 <div class="error hide" style="display: none;"><span id="Label88">Please enter required information.</span></div>
+                 <div class="error hide" style="display: none;"><span id="Label95">Do Not Use Special characters &lt;&gt; &amp; . , ! " </span></div>
+
+            </td>
+	<td></td>
+	<td></td>
+</tr>
+
+        
+        <tr id="trWebServicePassword">
+	<td class="label">
+                <span id="lblWebServicePassword">Web Service Password:</span>
+            </td>
+	<td>
+                <input name="ctl00$ContentPlaceHolder1$txtWebServicePassword" type="password" maxlength="150" id="txtWebServicePassword" class="textboxWide requiredValue firstPassword needed">
+                      <div class="error hide" style="display: none;"><span id="Label94">Please enter required information.</span></div>
+          
+            </td>
+	<td></td>
+	<td></td>
+</tr>
+
+        <tr id="trWebServiceRepeatPassword">
+	<td class="label">
+                <span id="lblRepeatWebServicePassword">Confirm Web Service Password:</span>
+            </td>
+	<td>
+                <input name="ctl00$ContentPlaceHolder1$txtConfirmWebServicePassword" type="password" maxlength="150" id="txtConfirmWebServicePassword" class="textboxWide requiredValue confPassword needed">
+         <div class="error hide" style="display: none;"><span id="Label89">Please enter required information.</span></div>
+         <div class="error hide" style="display: none;"><span id="Label90">Both passwords do not match.</span></div>
+
+            </td>
+	<td></td>
+	<td></td>
+</tr>
+
+
+                    <tr>
+        
+
+                <td colspan="4">
+                <span class="buttonsArea">
+
+                <a class="button blue prev fa fa-chevron-right" href="javascript:void(0)"><span id="Label7">Previous</span></a> 
+                
+                <a class="button blue next fa fa-chevron-left" href="javascript:void(0)"><span id="Label8">Next</span></a> 
+                    
+                    </span>
+                    
+                    </td>
+              </tr>
+
+        
+            </tbody>

@@ -1,0 +1,56 @@
+<div id="body">
+            
+            <section class="content-wrapper main-content clear-fix">
+                
+
+
+
+<hgroup class="title">
+    <h1>Register.</h1>
+    <h2>Create a new account.</h2>
+</hgroup>
+
+<form method="post" novalidate="novalidate">
+    <input name="__RequestVerificationToken" type="hidden" value="W7xrcc6_A8BhOBDzhwhiyKNzPJSQPAuvY1qtonqodMXYI81sArLZ1lE7mZQJoD0FS_HRSqpbTZhBHEIRQdE7VkRn3UwlcX3eDk3hyLKXW0w1">
+    
+    
+
+    <fieldset>
+        <legend>Registration Form</legend>
+        <ol>
+            <li class="email">
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="email" value="" data-val-required="You must specify an email address." data-val="true">
+                
+                <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
+            </li>
+            <li class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" data-val-required="Password cannot be blank." data-val-length="Password must be at least 6 characters" data-val-length-min="6" data-val="true">
+                
+                <span class="field-validation-valid" data-valmsg-for="password" data-valmsg-replace="true"></span>
+            </li>
+            <li class="confirm-password">
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" data-val-equalto="Password and confirmation password do not match." data-val-equalto-other="password" data-val="true">
+                
+                <span class="field-validation-valid" data-valmsg-for="confirmPassword" data-valmsg-replace="true"></span>
+            </li>
+            <li class="recaptcha">
+                <div class="message-info">
+                    <p>
+                        To enable CAPTCHA verification, <a href="http://go.microsoft.com/fwlink/?LinkId=204140">install the 
+                        ASP.NET Web Helpers Library</a> and uncomment ReCaptcha.GetHtml and replace 'PUBLIC_KEY'
+                        with your public key. At the top of this page, uncomment ReCaptcha. Validate and
+                        replace 'PRIVATE_KEY' with your private key.
+                        Register for reCAPTCHA keys at <a href="http://recaptcha.net">reCAPTCHA.net</a>.
+                    </p>
+                </div>
+                
+            </li>
+        </ol>
+        <input type="submit" value="Register">
+    </fieldset>
+</form>
+            </section>
+        </div>

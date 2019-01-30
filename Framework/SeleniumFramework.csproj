@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC0672CE-6137-47E8-9104-2971B5FD174C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeleniumFramework</RootNamespace>
+    <AssemblyName>SeleniumFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Faker.NET4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RTC_SandBox\JALSA\Framework\Resources\Faker.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RTC_SandBox\HIS_Project\HIS\Framework\bin\Debug\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RTC_SandBox\HIS_Project\HIS\Framework\bin\Debug\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsSequenceFill.cs" />
+    <Compile Include="clsSequenceVerifiy.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="CustomClasses\AccountInfo.cs" />
+    <Compile Include="CustomClasses\Common.cs" />
+    <Compile Include="CustomClasses\StepReporter.cs" />
+    <Compile Include="CustomClasses\Logger.cs" />
+    <Compile Include="CustomClasses\VehicleData.cs" />
+    <Compile Include="CustomClasses\CustomCard.cs" />
+    <Compile Include="DataManager.cs" />
+    <Compile Include="DBOperations.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FunctionParameters.cs" />
+    <Compile Include="Browser.cs" />
+    <Compile Include="GlobalVars.cs" />
+    <Compile Include="Pages\AnnouncementsManagement.cs" />
+    <Compile Include="Pages\CertificateManagement.cs" />
+    <Compile Include="Pages\ClientManagement.cs" />
+    <Compile Include="Pages\GeneralFunctionRunner.cs" />
+    <Compile Include="Pages\HospitalSearch.cs" />
+    <Compile Include="Pages\Login.cs" />
+    <Compile Include="Pages\Login2.cs" />
+    <Compile Include="Pages\ManageBranch.cs" />
+    <Compile Include="Pages\ManageBranchUsers.cs" />
+    <Compile Include="Pages\ManageCertificateResultRetestPermission.cs" />
+    <Compile Include="Pages\ManageCertificates.cs" />
+    <Compile Include="Pages\ManageClientCertificateRequest.cs" />
+    <Compile Include="Pages\ManageClientRequest.cs" />
+    <Compile Include="Pages\ManageClientRequest4Individual.cs" />
+    <Compile Include="Pages\ManageControlPanel.cs" />
+    <Compile Include="Pages\ManageFunction.cs" />
+    <Compile Include="Pages\ManageHospital.cs" />
+    <Compile Include="Pages\ManageHospitalUser.cs" />
+    <Compile Include="Pages\ManageHospitalUsers.cs" />
+    <Compile Include="Pages\ManageMedicalTest.cs" />
+    <Compile Include="Pages\ManageMohDoctors.cs" />
+    <Compile Include="Pages\ManagerialRegionsManagement.cs" />
+    <Compile Include="Pages\MyAccount.cs" />
+    <Compile Include="Pages\MyProfile.cs" />
+    <Compile Include="Pages\Pages.cs" />
+    <Compile Include="Pages\PublicInquires.cs" />
+    <Compile Include="Pages\QCAccountManagement.cs" />
+    <Compile Include="Pages\RestrictionWarningManagement.cs" />
+    <Compile Include="Pages\RolesManagement.cs" />
+    <Compile Include="Pages\SickLeaveManagement.cs" />
+    <Compile Include="Pages\UsersManagement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporterX.cs" />
+    <Compile Include="StringExtender.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="Pages\TopNavigationPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Selenium.WebDriver.ChromeDriver.2.20.0.0\driver\chromedriver.exe">
+      <Link>chromedriver.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
